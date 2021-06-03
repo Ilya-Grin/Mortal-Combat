@@ -1,6 +1,6 @@
 const player1 = {
 	name: 'Scorpion',
-	hp: 50,
+	hp: 20,
 	img: 'http://reactmarathon-api.herokuapp.com/assets/scorpion.gif',
 	weapon: ['Gun', 'Knife', 'Machete'],
 	attack: function () {
@@ -40,9 +40,8 @@ function createPlayer(player, name) {
 	$progressbar.appendChild($name);
 	$character.appendChild($img);
 
-	$life.style.width = '100%';
+	$life.style.width = player.hp + '%';
 	$name.innerHTML = player.name;
-	$life.innerHTML = player.hp;
 	$img.src = player.img;
 
 	console.log(player);
