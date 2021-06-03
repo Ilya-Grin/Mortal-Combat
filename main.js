@@ -43,9 +43,6 @@ function createPlayer(player, name) {
 	$life.style.width = player.hp + '%';
 	$name.innerHTML = player.name;
 	$img.src = player.img;
-
-	console.log(player);
-
 }
 
 createPlayer(player1, 'player1');
