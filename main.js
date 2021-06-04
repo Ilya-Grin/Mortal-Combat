@@ -69,9 +69,6 @@ function changeHP(player) {
 	}
 
 	$playerLife.style.width = player.hp + '%';
-
-	console.log(player.name + $playerLife.style.width);
-	console.log(player.name + player.hp);
 }
 
 function playerWins(name) {
